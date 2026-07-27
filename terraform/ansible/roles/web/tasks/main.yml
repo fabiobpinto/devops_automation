@@ -1,0 +1,6 @@
+---
+# tasks file for web
+
+- include_tasks: apt.yml
+  when:
+    - ansible_distribution in ['Debian','Ubuntu']

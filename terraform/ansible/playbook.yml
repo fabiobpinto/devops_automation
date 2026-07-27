@@ -1,0 +1,13 @@
+---
+- name: Playbook
+  hosts: 
+    - vms_web
+  roles: 
+  - web
+
+- name: Configurar DB Servers
+  hosts:
+    -  vms_db
+  roles:
+    - db
+...

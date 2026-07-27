@@ -1,0 +1,5 @@
+- name: APT | Assegurando pacotes necessários
+  apt:
+    name: "{{ install_packages_apt }}"
+    state: latest
+    update_cache: true
